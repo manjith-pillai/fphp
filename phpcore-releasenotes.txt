@@ -1,0 +1,100 @@
+Laravel project setup
+	Command: laravel new PHPCore
+	Internal commands executed
+		php artisan optimize
+		php artisan key:generate
+	Note: A project is created with name as PHPCore
+
+Add database configuration to .env file
+
+Laravel 5.3 auth module setup
+	Command: php artisan make:auth; php artisan migrate;
+	Note: Authorization module added to project code base.
+	Login, Logout, Authorization
+	Tables added : users, password_resets, migrations
+
+Added AdminLTE as bower component
+	Command: go to project\public
+		bower install admin-lte
+	Note: AdminLTE#2.3.8 added as a module under bower_components\AdminLTE
+
+Convert AdminLTE into a blade template
+	??
+
+Added CURD Demo Module
+	Module Name: Demo (Title, Description, Owner)
+	Refer Laravel 5.3 CURD Design Pattern-BB for instructions	
+
+Added PHPCoreReadMe.txt
+	??
+	Provide setup instruction of PHPCore as a baseline project
+	Copy
+	update
+	serve
+
+Apply AdminLTE Blade template to CURD Demo Views
+	??
+
+DASBOARD Release for PHPCore
+	??
+	
+Date: 27-Dec-2016
+Added REALOCATION Template
+	AS a bower module - realocation
+	bower install d:\workspace\realocation
+
+Date: 26-Dec-2016
+Added generic error page css aligned with AdminLTE
+Updated add, login, index pages with AdminLTE CSS
+app.blade.php - migrated to AdminLTE css
+index.blade.php - layout alignment changes
+login.blade.php - migrated to AdminLTE css
+master.blade.php - layout alignedment changes
+register.blade.php - migrated to AdminLTE css
+sidebar.blade.php - Menu updated with comming soon changes
+
+Date: 28-Dec-2016
+A new module DemoTabs created
+
+=================================================================
+Date: 29-Dec-2016
+ Added Coming soon functionality in views folder
+ index.blade.php of demo, demo tabs and user management  is done
+ tabdemo naming convention also done
+ sidebar sequencing order is done
+ footer css issues also done
+ form layout of all pages is same as AdminLTE Form Layout pages
+ column attribute : Size is added
+ Login.blade.php / Register.blade.php / home.blade.php also done as per previously
+  logged in user image and name done
+
+================================================================
+	
+
+
+Date: 02-Jan-2017
+Added the notification module (Notification - Userscreated, Event - A user created)
+###Commands 
+php artisan make:notification UsersCreated
+Notification created successfully.
+
+php artisan notifications:table
+Migration created successfully!
+
+php artisan migrate
+Migrated: 2017_01_02_133445_create_notifications_table
+
+Customization in notification class ---->
+Add code for toArray in Notification Class
+Update the via function as per target need - database, mail etc
+
+Customization in activity class --->
+Call notify function on the object whereevevr notification need to be generated
+
+
+
+
+	
+	
+
+

@@ -1,0 +1,36 @@
+.btn.btn-default
+{
+	font-size:21px;
+	color:#3c8dbc;
+	background-color:none !important;
+	border-color:none !important;
+}
+.content-header
+{
+	padding:15px 15px 15px 15px !important;
+}
+.box
+{
+	border-top:3px solid #3c8dbc !important;
+}
+
+
+.box
+{
+	box-shadow:none !important;
+	border-top:3px solid #337ab7 !important;
+}
+.userstable td
+{
+	padding:6px !important;
+}
+.main-sidebar
+{
+	height:1000px !important;
+}
+a.navbar-brand {
+    display: none !important;
+}
+.box-body>.table {
+    margin-bottom:none !important; 
+}
